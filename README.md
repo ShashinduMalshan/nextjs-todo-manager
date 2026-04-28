@@ -1,36 +1,140 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js Todo Manager
+
+A simple, clean, and modern **To-Do application** built with **Next.js (App Router), TypeScript, and Tailwind CSS**.  
+This project demonstrates component-based architecture, custom hooks, and local storage persistence.
+
+---
+
+## Features
+
+- Add new tasks
+- Delete tasks
+- Mark tasks as completed
+- Persistent storage using localStorage
+- Component-based architecture
+- Fully typed with TypeScript
+- Responsive UI using Tailwind CSS
+
+---
+
+## Tech Stack
+
+- Next.js (App Router)
+- TypeScript
+- Tailwind CSS
+- React Hooks (useState, useEffect)
+
+---
+
+## Project Structure
+
+```
+
+todo-app/
+├── app/
+│   ├── layout.tsx
+│   ├── page.tsx
+│   ├── globals.css
+│
+├── components/
+│   ├── TodoInput.tsx
+│   ├── TodoItem.tsx
+│   ├── TodoList.tsx
+│
+├── hooks/
+│   ├── useTodos.ts
+│
+├── types/
+│   ├── task.ts
+│
+├── tailwind.config.js
+├── postcss.config.js
+├── package.json
+
+````
+
+---
 
 ## Getting Started
 
-First, run the development server:
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/your-username/nextjs-todo-manager.git
+cd nextjs-todo-manager
+````
+
+---
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+---
+
+### 3. Run the development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 4. Open in browser
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+http://localhost:3000
+```
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## How It Works
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+* The app uses a **custom hook (`useTodos`)** to manage all task logic.
+* Tasks are stored in **React state** and synced with **localStorage**.
+* UI is broken into reusable components:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+  * `TodoInput` → Add tasks
+  * `TodoList` → Display tasks
+  * `TodoItem` → Individual task handling
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Learning Outcomes
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project helps you understand:
+
+* Next.js App Router structure
+* Component-based architecture
+* TypeScript type safety
+* State management with hooks
+* Local storage persistence
+* Tailwind CSS styling
+
+---
+
+## Future Improvements
+
+* Add database (MySQL / MongoDB)
+* User authentication
+* Drag & drop task ordering
+* Due dates and reminders
+* Backend API with Next.js route handlers
+
+---
+
+## Author
+
+Built by a developer learning modern full-stack development with Next.js.
+
+---
+
+## License
+
+This project is open-source and free to use.
+
+```
+
+---
